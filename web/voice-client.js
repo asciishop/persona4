@@ -228,7 +228,20 @@
     }
     for (let i = 0; i < 400; i++){
       const r = await request('/v1/jobs/' + ref.id);
-      if (r.status === 'ready') return {audio_url:r.audio_url, url: base() + r.audio_url, remoto:false};
+      if (r.status === 'ready') {
+        const d = vozDirecta();
+        if (d && d.token) {
+          // Un elemento <audio> no puede mandar cabeceras: si se le da la URL
+          // del .wav, el navegador la pide sin Authorization y el servicio
+          // responde 401. Así que el archivo se trae con fetch —que sí puede—
+          // y se reproduce desde una URL de objeto, igual que con RunPod.
+          const resp = await fetch(base() + r.audio_url, {headers: cabecerasVoz()});
+          if (!resp.ok) throw new Error('no se pudo descargar el audio (' + resp.status + ')');
+          return {audio_url:r.audio_url, url: URL.createObjectURL(await resp.blob()), remoto:true};
+        }
+        // Sin token, la URL directa: evita cargar el archivo entero en memoria.
+        return {audio_url:r.audio_url, url: base() + r.audio_url, remoto:false};
+      }
       if (r.status === 'error') throw new Error((r.error && r.error.message) || 'la síntesis falló');
       if (r.status === 'cancelled') return null;
       await wait(250);
@@ -277,7 +290,7 @@
       state.cola=ids;
       if(button){button.dataset.voicePlaying='1';button.textContent='■';button.disabled=false;}
       for(let i=0;i<ids.length;i++){
-        state.currentJob=ids[i];
+        state.currentJob=ids[i].id;   // el identificador, no el objeto
         const r=await esperarTrozo(ids[i]);
         if(!r) break;                       // cancelado: se deja de encadenar
         if(state.cola!==ids) break;         // otro turno tomó el relevo
