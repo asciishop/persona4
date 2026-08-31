@@ -1,0 +1,160 @@
+{
+  "schema": "personajes.reference-voices.v1",
+  "created_at": "2026-08-12T18:35:00-0400",
+  "authenticity": "synthetic_recreation_not_historical_recording",
+  "source_model": "hexgrad/Kokoro-82M",
+  "sample_rate": 24000,
+  "files": [
+    {
+      "character_id": "borges",
+      "status": "generated",
+      "gender_base": "male",
+      "kokoro_voice_mix": [
+        {
+          "voice": "bm_fable",
+          "weight": 0.4
+        },
+        {
+          "voice": "em_santa",
+          "weight": 0.6
+        }
+      ],
+      "seconds": 9.82,
+      "sha256": "816b2e48f0662a2df8e89a8c9d2cff500652e521661c6d94f845de3d24b67a09",
+      "path": "C:\\Users\\leona\\Documents\\Codex\\2026-08-10\\qu\\outputs\\personajes-voz-local-v3\\voice-service\\references\\borges.wav"
+    },
+    {
+      "character_id": "cleopatra",
+      "status": "processed_reference_for_cloning",
+      "gender_base": "female",
+      "kokoro_voice_mix": [
+        {
+          "voice": "ef_dora",
+          "weight": 1.0
+        }
+      ],
+      "seconds": 6.75,
+      "reference_sha256": "1d6a10ce88cadc2ef0d595383bc583a5dd78ebb5eeb9dc674eb25ceb10c6c4d7",
+      "path": "C:\\Users\\leona\\Documents\\Codex\\2026-08-10\\qu\\outputs\\personajes-voz-local-v3\\voice-service\\references\\cleopatra.wav"
+    },
+    {
+      "character_id": "frida",
+      "status": "processed_reference_for_cloning",
+      "gender_base": "female",
+      "kokoro_voice_mix": [
+        {
+          "voice": "ef_dora",
+          "weight": 1.0
+        }
+      ],
+      "seconds": 6.62,
+      "reference_sha256": "f3934c8fa84e25e512054134e4f0593fe80fb8518403c70168c5b0eda653c7e3",
+      "path": "C:\\Users\\leona\\Documents\\Codex\\2026-08-10\\qu\\outputs\\personajes-voz-local-v3\\voice-service\\references\\frida.wav"
+    },
+    {
+      "character_id": "juana",
+      "status": "generated",
+      "gender_base": "female",
+      "kokoro_voice_mix": [
+        {
+          "voice": "af_heart",
+          "weight": 0.4
+        },
+        {
+          "voice": "ef_dora",
+          "weight": 0.6
+        }
+      ],
+      "seconds": 6.78,
+      "sha256": "fc192d3ce6398ed199c0420a69cf6b656960cd5572f5f0279fed4a6f1bd8138e",
+      "path": "C:\\Users\\leona\\Documents\\Codex\\2026-08-10\\qu\\outputs\\personajes-voz-local-v3\\voice-service\\references\\juana.wav"
+    },
+    {
+      "character_id": "julio_cesar",
+      "status": "processed_reference_for_cloning",
+      "gender_base": "male",
+      "kokoro_voice_mix": [
+        {
+          "voice": "em_santa",
+          "weight": 0.92
+        },
+        {
+          "voice": "em_alex",
+          "weight": 0.08
+        }
+      ],
+      "seconds": 6.8,
+      "reference_sha256": "eb8b4efe7ba17b548b283dc6d435b99e9862750e88a7c993f0ac32aad0be4fa6",
+      "path": "C:\\Users\\leona\\Documents\\Codex\\2026-08-10\\qu\\outputs\\personajes-voz-local-v3\\voice-service\\references\\julio_cesar.wav"
+    },
+    {
+      "character_id": "medea",
+      "status": "processed_reference_for_cloning",
+      "gender_base": "female",
+      "kokoro_voice_mix": [
+        {
+          "voice": "ef_dora",
+          "weight": 1.0
+        }
+      ],
+      "seconds": 7.85,
+      "reference_sha256": "e07db6e72d8cca4125e788687520857b01073c29c08e3513ecbb9f24ddaca1ad",
+      "path": "C:\\Users\\leona\\Documents\\Codex\\2026-08-10\\qu\\outputs\\personajes-voz-local-v3\\voice-service\\references\\medea.wav"
+    },
+    {
+      "character_id": "tesla",
+      "status": "generated",
+      "gender_base": "male",
+      "kokoro_voice_mix": [
+        {
+          "voice": "am_michael",
+          "weight": 0.4
+        },
+        {
+          "voice": "em_alex",
+          "weight": 0.6
+        }
+      ],
+      "seconds": 8.25,
+      "sha256": "afb0837a06301881b94a0635eb404be7f493b033ca1f47b3466be4a2d82fd44e",
+      "path": "C:\\Users\\leona\\Documents\\Codex\\2026-08-10\\qu\\outputs\\personajes-voz-local-v3\\voice-service\\references\\tesla.wav"
+    },
+    {
+      "character_id": "sherlock",
+      "status": "generated",
+      "gender_base": "male",
+      "kokoro_voice_mix": [
+        {
+          "voice": "bm_lewis",
+          "weight": 0.4
+        },
+        {
+          "voice": "em_alex",
+          "weight": 0.6
+        }
+      ],
+      "seconds": 8.32,
+      "sha256": "dda93497d5e54d1c5f2fb5f80661be7c74df627925a6018ff173bb39b098bedc",
+      "path": "C:\\Users\\leona\\Documents\\Codex\\2026-08-10\\qu\\outputs\\personajes-voz-local-v3\\voice-service\\references\\sherlock.wav"
+    },
+    {
+      "character_id": "ulises",
+      "status": "processed_reference_for_cloning",
+      "gender_base": "male",
+      "kokoro_voice_mix": [
+        {
+          "voice": "em_santa",
+          "weight": 0.22
+        },
+        {
+          "voice": "em_alex",
+          "weight": 0.78
+        }
+      ],
+      "seconds": 7.05,
+      "reference_sha256": "3e6be47505ce70dfe8fe8d82fe661f964ba0c403dadbe092284633b305f3f45f",
+      "path": "C:\\Users\\leona\\Documents\\Codex\\2026-08-10\\qu\\outputs\\personajes-voz-local-v3\\voice-service\\references\\ulises.wav"
+    }
+  ],
+  "elapsed_seconds": 43.52
+}

@@ -1,0 +1,26 @@
+# Ruedas con CUDA: Chatterbox no corre sin GPU y siete de los trece
+# personajes clonan con él. La imagen base ya trae torch 2.6.0+cu124.
+#
+# Las versiones van clavadas porque este conjunto es el que corre, medido, en
+# la máquina donde se desarrolló, con los dos motores vivos a la vez.
+#
+# Chatterbox ya exige por su cuenta transformers==5.2.0, torch==2.6.0 y
+# torchaudio==2.6.0. Repetirlo aquí no cambia lo que pip resuelve: sirve para
+# dejar dicho que la imagen base NO es intercambiable. Instalar esto sobre otro
+# torch —el de un Pod genérico, por ejemplo— deja transformers 5.2.0 corriendo
+# sobre un torch que no le corresponde, y entonces Kokoro falla al importar con
+# un mensaje que no explica nada: «Could not import module 'AlbertModel'».
+#
+# Lo engañoso del síntoma es que Chatterbox arranca igual y todo parece bien
+# hasta que seis de los trece personajes se quedan mudos: juana, tesla,
+# sherlock, zinc, va91 y ucron, que son los que van por Kokoro.
+chatterbox-tts==0.1.7
+kokoro==0.9.4
+misaki==0.9.4
+transformers==5.2.0
+tokenizers==0.22.2
+numpy==1.26.4
+soundfile>=0.12,<1
+runpod>=1.6
+# Dictado: el mismo motor que usa el servicio local.
+faster-whisper==1.2.1

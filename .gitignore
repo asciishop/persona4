@@ -1,0 +1,16 @@
+# Los modelos se descargan al construir la imagen (hornear_voces.py), no viajan
+# por git: son varios gigas y GitHub los rechazaría.
+models/
+__pycache__/
+*.pyc
+
+# Nada de credenciales, nunca.
+.env
+*.key
+*clave*
+
+# Restos de ejecución local
+cache/
+transcription-temp/
+run/
+logs/

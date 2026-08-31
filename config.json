@@ -1,0 +1,24 @@
+{
+  "schema": "personajes.voice-service-config.v1",
+  "engine": {
+    "default": "hybrid-local",
+    "device": "auto",
+    "prewarm": true,
+    "timeout_seconds": 180,
+    "openvoice_runner": "engines/openvoice_runner.py"
+  },
+  "cache": {
+    "max_mb": 2048
+  },
+  "playback": {
+    "speak_actions": false,
+    "autoplay_default": false
+  },
+  "speech_recognition": {
+    "engine": "faster-whisper",
+    "model": "small",
+    "language": "es",
+    "device": "auto",
+    "max_recording_seconds": 60
+  }
+}

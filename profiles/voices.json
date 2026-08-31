@@ -1,0 +1,398 @@
+{
+  "schema": "personajes.voice-catalog.v1",
+  "profiles": [
+    {
+      "character_id": "einstein",
+      "display_name": "Albert Einstein",
+      "engine": "hybrid-local",
+      "profile_version": 5,
+      "authenticity": "historical_voice_reference_clone",
+      "reference_candidate": "references/einstein.wav",
+      "voice": "em_alex",
+      "voice_mix": [
+        {
+          "voice": "bm_george",
+          "weight": 0.4
+        },
+        {
+          "voice": "em_alex",
+          "weight": 0.6
+        }
+      ],
+      "accent": {
+        "origin": "German",
+        "strength": 0.12,
+        "rendering": "historical_reference_and_prompt_prosody"
+      },
+      "acoustic": {
+        "speed": 0.9,
+        "expressiveness": 0.43,
+        "cfg_weight": 0.48
+      }
+    },
+    {
+      "character_id": "borges",
+      "display_name": "Jorge Luis Borges",
+      "engine": "hybrid-local",
+      "profile_version": 4,
+      "authenticity": "synthetic_distinct_voice",
+      "reference_candidate": "references/borges.wav",
+      "voice": "em_santa",
+      "voice_mix": [
+        {
+          "voice": "bm_fable",
+          "weight": 0.4
+        },
+        {
+          "voice": "em_santa",
+          "weight": 0.6
+        }
+      ],
+      "acoustic": {
+        "speed": 0.84
+      }
+    },
+    {
+      "character_id": "cleopatra",
+      "display_name": "Cleopatra",
+      "engine": "hybrid-local",
+      "profile_version": 9,
+      "authenticity": "synthetic_distinct_voice_from_spanish_donor",
+      "reference_candidate": "references/cleopatra.wav",
+      "voice": "ef_dora",
+      "voice_mix": [
+        {
+          "voice": "ef_dora",
+          "weight": 1.0
+        }
+      ],
+      "accent": {
+        "origin": "neutral Spanish",
+        "strength": 0.0,
+        "rendering": "distinct_spanish_female_reference"
+      },
+      "acoustic": {
+        "speed": 0.88,
+        "expressiveness": 0.42,
+        "cfg_weight": 0.48
+      },
+      "reference_source": {
+        "provider": "rhasspy/piper-voices",
+        "voice": "es_ES-mls_9972-low",
+        "locale": "es_ES",
+        "license": "see upstream model card"
+      }
+    },
+    {
+      "character_id": "frida",
+      "display_name": "Frida Kahlo",
+      "engine": "hybrid-local",
+      "profile_version": 9,
+      "authenticity": "synthetic_distinct_voice_from_spanish_donor",
+      "reference_candidate": "references/frida.wav",
+      "voice": "ef_dora",
+      "voice_mix": [
+        {
+          "voice": "ef_dora",
+          "weight": 1.0
+        }
+      ],
+      "historical_basis": {
+        "status": "unverified_recording_not_used",
+        "traits": [
+          "mexican_spanish",
+          "warm",
+          "expressive",
+          "emotionally_variable",
+          "light_seseo"
+        ]
+      },
+      "accent": {
+        "origin": "Mexican Spanish",
+        "strength": 0.22,
+        "rendering": "official_piper_es_MX_female_reference"
+      },
+      "acoustic": {
+        "speed": 0.93,
+        "expressiveness": 0.55,
+        "cfg_weight": 0.45
+      },
+      "reference_source": {
+        "provider": "rhasspy/piper-voices",
+        "voice": "es_MX-claude-high",
+        "locale": "es_MX",
+        "license": "see upstream model card"
+      }
+    },
+    {
+      "character_id": "juana",
+      "display_name": "Juana de Arco",
+      "engine": "hybrid-local",
+      "profile_version": 8,
+      "authenticity": "synthetic_distinct_voice",
+      "voice": "ef_dora",
+      "voice_mix": [
+        {
+          "voice": "ff_siwis",
+          "weight": 0.28
+        },
+        {
+          "voice": "ef_dora",
+          "weight": 0.72
+        }
+      ],
+      "accent": {
+        "origin": "French",
+        "strength": 0.14,
+        "rendering": "native_french_donor_with_spanish_base"
+      },
+      "acoustic": {
+        "speed": 0.94
+      },
+      "nota_voz": "Sin referencia a propósito: la que existía llevaba horneado un donante estadounidense al 40%. Va por Kokoro con el donante francés ff_siwis, que es su acento por diseño."
+    },
+    {
+      "character_id": "julio_cesar",
+      "display_name": "Julio César",
+      "engine": "hybrid-local",
+      "profile_version": 9,
+      "authenticity": "synthetic_distinct_voice_from_spanish_donor",
+      "reference_candidate": "references/julio_cesar.wav",
+      "voice": "em_santa",
+      "voice_mix": [
+        {
+          "voice": "em_santa",
+          "weight": 0.92
+        },
+        {
+          "voice": "em_alex",
+          "weight": 0.08
+        }
+      ],
+      "accent": {
+        "origin": "neutral Spanish",
+        "strength": 0.0,
+        "rendering": "distinct_spanish_male_reference"
+      },
+      "acoustic": {
+        "speed": 0.9,
+        "expressiveness": 0.38,
+        "cfg_weight": 0.52
+      },
+      "reference_source": {
+        "provider": "rhasspy/piper-voices",
+        "voice": "es_ES-davefx-medium",
+        "locale": "es_ES",
+        "license": "see upstream model card"
+      }
+    },
+    {
+      "character_id": "medea",
+      "display_name": "Medea",
+      "engine": "hybrid-local",
+      "profile_version": 9,
+      "authenticity": "synthetic_distinct_voice_from_spanish_donor",
+      "reference_candidate": "references/medea.wav",
+      "voice": "ef_dora",
+      "voice_mix": [
+        {
+          "voice": "ef_dora",
+          "weight": 1.0
+        }
+      ],
+      "accent": {
+        "origin": "neutral Spanish",
+        "strength": 0.0,
+        "rendering": "distinct_spanish_female_reference"
+      },
+      "acoustic": {
+        "speed": 0.8,
+        "expressiveness": 0.58,
+        "cfg_weight": 0.5
+      },
+      "reference_source": {
+        "provider": "rhasspy/piper-voices",
+        "voice": "es_ES-sharvard-medium:F",
+        "locale": "es_ES",
+        "license": "see upstream model card"
+      }
+    },
+    {
+      "character_id": "tesla",
+      "display_name": "Nikola Tesla",
+      "engine": "hybrid-local",
+      "profile_version": 5,
+      "authenticity": "synthetic_distinct_voice",
+      "reference_candidate": "references/tesla.wav",
+      "voice": "em_alex",
+      "voice_mix": [
+        {
+          "voice": "am_michael",
+          "weight": 0.4
+        },
+        {
+          "voice": "em_alex",
+          "weight": 0.6
+        }
+      ],
+      "accent": {
+        "origin": "Serbian",
+        "strength": 0.1,
+        "rendering": "prompt_prosody_and_subtle_pacing"
+      },
+      "acoustic": {
+        "speed": 0.96
+      }
+    },
+    {
+      "character_id": "sherlock",
+      "display_name": "Sherlock Holmes",
+      "engine": "hybrid-local",
+      "profile_version": 5,
+      "authenticity": "synthetic_distinct_voice",
+      "reference_candidate": "references/sherlock.wav",
+      "voice": "em_alex",
+      "voice_mix": [
+        {
+          "voice": "bm_lewis",
+          "weight": 0.5
+        },
+        {
+          "voice": "em_alex",
+          "weight": 0.5
+        }
+      ],
+      "accent": {
+        "origin": "London British",
+        "strength": 0.13,
+        "rendering": "prompt_prosody_and_british_voice_blend"
+      },
+      "acoustic": {
+        "speed": 0.94
+      }
+    },
+    {
+      "character_id": "ulises",
+      "display_name": "Ulises",
+      "engine": "hybrid-local",
+      "profile_version": 9,
+      "authenticity": "synthetic_distinct_voice_from_spanish_donor",
+      "reference_candidate": "references/ulises.wav",
+      "voice": "em_santa",
+      "voice_mix": [
+        {
+          "voice": "em_santa",
+          "weight": 0.22
+        },
+        {
+          "voice": "em_alex",
+          "weight": 0.78
+        }
+      ],
+      "accent": {
+        "origin": "neutral Spanish",
+        "strength": 0.0,
+        "rendering": "spanish_male_voice_blend_without_anglophone_donor"
+      },
+      "acoustic": {
+        "speed": 0.85,
+        "expressiveness": 0.48,
+        "cfg_weight": 0.45
+      },
+      "reference_source": {
+        "provider": "rhasspy/piper-voices",
+        "voice": "es_MX-ald-medium",
+        "locale": "es_MX",
+        "license": "see upstream model card"
+      }
+    },
+    {
+      "character_id": "zinc",
+      "display_name": "Zinc — Guardián de la Memoria de los Metales",
+      "engine": "hybrid-local",
+      "profile_version": 3,
+      "authenticity": "synthetic_entity_voice_no_region",
+      "voice": "em_santa",
+      "voice_mix": [
+        {
+          "voice": "em_santa",
+          "weight": 0.6
+        },
+        {
+          "voice": "em_alex",
+          "weight": 0.4
+        }
+      ],
+      "acoustic": {
+        "speed": 0.92,
+        "pitch_semitones": -1.0,
+        "low_gain_db": 2.5,
+        "high_gain_db": -0.5
+      },
+      "titan": {
+        "nobleza": 0.95,
+        "filo": 0.6,
+        "capa_semitonos": -5.0,
+        "capa_mezcla": 0.44
+      }
+    },
+    {
+      "character_id": "va91",
+      "display_name": "VA 91 — el Buda Eléctrico",
+      "engine": "hybrid-local",
+      "profile_version": 3,
+      "authenticity": "synthetic_entity_voice_no_region",
+      "voice": "em_alex",
+      "voice_mix": [
+        {
+          "voice": "em_alex",
+          "weight": 0.7
+        },
+        {
+          "voice": "em_santa",
+          "weight": 0.3
+        }
+      ],
+      "acoustic": {
+        "speed": 0.95,
+        "pitch_semitones": -0.4,
+        "low_gain_db": 0.5,
+        "high_gain_db": -0.5
+      },
+      "titan": {
+        "nobleza": 0.5,
+        "filo": 0.45,
+        "capa_semitonos": -4.0,
+        "capa_mezcla": 0.25,
+        "banda": 0.45
+      }
+    },
+    {
+      "character_id": "ucron",
+      "display_name": "Ucron — Guardián del Imaginario Basura",
+      "engine": "hybrid-local",
+      "profile_version": 3,
+      "authenticity": "synthetic_entity_voice_no_region",
+      "voice": "ef_dora",
+      "voice_mix": [
+        {
+          "voice": "ef_dora",
+          "weight": 1.0
+        }
+      ],
+      "acoustic": {
+        "speed": 0.9,
+        "pitch_semitones": 0.0,
+        "low_gain_db": -1.0,
+        "high_gain_db": 1.5
+      },
+      "titan": {
+        "nobleza": 0.3,
+        "filo": 0.15,
+        "capa_semitonos": -2.0,
+        "capa_mezcla": 0.1,
+        "aire": 0.85
+      }
+    }
+  ]
+}
